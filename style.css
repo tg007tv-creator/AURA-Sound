@@ -148,11 +148,53 @@ h2 { color: var(--accent-color); margin-bottom: 0.5rem; }
     border-top: none;
 }
 
+/* Join Form Styles */
 .join-form { max-width: 480px; margin: 1.5rem auto 0; text-align: left; }
 .form-group { margin-bottom: 1rem; }
 .form-group label { display: block; margin-bottom: 0.4rem; }
 .form-group input, .form-group select { width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid var(--border-color); background-color: var(--bg-card); color: var(--text-color); }
 
+/* Creator Profile Card Styling */
+.creator-card {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: var(--bg-main);
+    border: 2px solid var(--accent-color);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+    position: relative;
+}
+
+.creator-badge {
+    background-color: var(--accent-color);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.creator-avatar {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.creator-name {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-bottom: 0.8rem;
+}
+
+.creator-info {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-bottom: 0.3rem;
+}
+
+/* Buttons */
 .btn { display: inline-block; padding: 0.7rem 1.8rem; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; text-decoration: none; }
 .btn-primary { background-color: var(--accent-color); color: #fff; }
 .btn-secondary { background-color: transparent; border: 1px solid var(--border-color); color: #fff; }
