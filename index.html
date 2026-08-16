@@ -3,42 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ชมรมดนตรี Music Club</title>
+    <title>AURA-Sound | ชมรมดนตรี</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header Navigation -->
     <header>
-        <h1>🎸 Music Club</h1>
-        <p>ยินดีต้อนรับสู่ชมรมดนตรี ศูนย์รวมคนรักเสียงเพลง</p>
+        <div class="logo">🎵 AURA-SOUND</div>
+        <nav>
+            <a href="#about">เกี่ยวกับชมรม</a>
+            <a href="#activities">กิจกรรม</a>
+            <a href="#schedule">ตารางซ้อม</a>
+            <a href="#join">สมัครสมาชิก</a>
+        </nav>
     </header>
 
-    <!-- Main Content Section -->
-    <main>
-        <section class="about">
-            <h2>เกี่ยวกับชมรม</h2>
-            <p>ชมรมของเราเป็นพื้นที่สำหรับแลกเปลี่ยนเทคนิคการเล่นดนตรี ซ้อมดนตรี และจัดกิจกรรมแสดงคอนเสิร์ตสำหรับนักเรียน/นักศึกษาทุกคน</p>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>ปลดปล่อยเสียงเพลงในตัวคุณที่ <span>AURA-Sound</span></h1>
+        <p>พื้นที่สำหรับคนรักดนตรี มาร่วมสร้างเสียงเพลง มิตรภาพ และเวทีแสดงผลงานไปด้วยกัน</p>
+        <a href="#join" class="btn">เข้าร่วมชมรมกับเรา</a>
+    </section>
 
-        <section class="activities">
-            <h2>กิจกรรมของเรา</h2>
-            <ul>
-                <li>🎼 ห้องซ้อมดนตรีฟรีสำหรับสมาชิก</li>
-                <li>🎸 สอนพื้นฐานกีตาร์ เบส กลอง และร้องเพลง</li>
-                <li>🎤 การแข่งขัน Music Contest ประจำปี</li>
-            </ul>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>เกี่ยวกับชมรม AURA-Sound</h2>
+        <p class="about-text">
+            ชมรมดนตรี AURA-Sound เป็นศูนย์รวมของนักเรียน/นักศึกษาที่มีความเชี่ยวชาญและหลงใหลในเสียงเพลง ไม่ว่าจะเป็นการเล่นเครื่องดนตรีสากล การร้องเพลง หรือการแต่งเพลง เรามีห้องซ้อมพร้อมอุปกรณ์ดนตรีครบครัน และมีกิจกรรมการแสดงคอนเสิร์ตตลอดทั้งปี
+        </p>
+    </section>
 
-        <section class="join">
-            <h2>สนใจเข้าร่วมชมรม?</h2>
-            <button class="btn" onclick="alert('ขอบคุณที่สนใจ! ติดต่อสมัครได้ที่ห้องชมรมดนตรี')">สมัครสมาชิก</button>
-        </section>
-    </main>
+    <!-- Activities & Instruments Section -->
+    <section id="activities" class="container bg-light">
+        <h2>ตำแหน่งและเครื่องดนตรีที่รับสมัคร</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>🎸 Guitar & Bass</h3>
+                <p>ฝึกซ้อมไลน์กีตาร์ กีตาร์โปร่ง กีตาร์ไฟฟ้า และเบส ร่วมแกะเพลงและวางโครงสร้างวงดนตรี</p>
+            </div>
+            <div class="card">
+                <h3>🥁 Drums & Percussion</h3>
+                <p>จังหวะหัวใจของวง ฝึกควบคุมคุมจังหวะและสร้างน้ำหนักเสียงเพลงให้แน่นและสมบูรณ์</p>
+            </div>
+            <div class="card">
+                <h3>🎤 Vocalist & Keyboards</h3>
+                <p>พัฒนาทักษะการใช้เสียง การร้องประสาน รวมถึงการเล่นเปียโนและคีย์บอร์ดสร้างมิติให้วง</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Footer Section -->
+    <!-- Schedule Section -->
+    <section id="schedule" class="container">
+        <h2>ตารางการซ้อมประจำสัปดาห์</h2>
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>วัน</th>
+                    <th>เวลา</th>
+                    <th>กิจกรรม / ประเภทการซ้อม</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>จันทร์ - พุธ</td>
+                    <td>16:30 - 18:30 น.</td>
+                    <td>ซ้อมแยกตามตำแหน่ง (กีตาร์ / ร้อง / กลอง)</td>
+                </tr>
+                <tr>
+                    <td>พฤหัสบดี</td>
+                    <td>16:30 - 19:00 น.</td>
+                    <td>รวมวงซ้อมใหญ่ (Full Band Rehearsal)</td>
+                </tr>
+                <tr>
+                    <td>ศุกร์</td>
+                    <td>15:30 - 18:00 น.</td>
+                    <td>กิจกรรม Jam Session & แสดงดนตรีสดหน้าชมรม</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Join Us Form -->
+    <section id="join" class="container bg-light">
+        <h2>สมัครเข้าชมรม AURA-Sound</h2>
+        <form class="join-form" onsubmit="event.preventDefault(); alert('ส่งใบสมัครเรียบร้อยแล้ว! แล้วพบกันที่ห้องซ้อมดนตรี');">
+            <div class="form-group">
+                <label for="name">ชื่อ - นามสกุล:</label>
+                <input type="text" id="name" placeholder="กรอกชื่อ-นามสกุล" required>
+            </div>
+            <div class="form-group">
+                <label for="instrument">เครื่องดนตรี / ตำแหน่งที่สนใจ:</label>
+                <select id="instrument">
+                    <option value="guitar">กีตาร์โปร่ง / กีตาร์ไฟฟ้า</option>
+                    <option value="bass">เบส</option>
+                    <option value="drums">กลองชุด</option>
+                    <option value="vocal">ร้องนำ / ร้องประสาน</option>
+                    <option value="keyboard">คีย์บอร์ด / เปียโน</option>
+                    <option value="other">เบื้องหลัง / ทีมเทคนิคเสียง</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="contact">เบอร์โทรศัพท์ / Line ID:</label>
+                <input type="text" id="contact" placeholder="สำหรับติดต่อกลับ" required>
+            </div>
+            <button type="submit" class="btn">ยื่นใบสมัคร</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Music Club. All rights reserved.</p>
+        <p>© 2026 AURA-Sound Music Club. All Rights Reserved.</p>
     </footer>
 
 </body>
