@@ -14,7 +14,6 @@
         <div class="logo">🎵 AURA-SOUND</div>
         <nav>
             <a href="#why-us">ทำไมต้องมาอยู่กับเรา</a>
-            <a href="#chords">แจกคอร์ดเพลง</a>
             <a href="#gallery">บรรยากาศชมรม</a>
             <a href="#schedule">ตารางซ้อม</a>
             <a href="#faq">FAQ</a>
@@ -69,31 +68,8 @@
         </div>
     </section>
 
-    <!-- Guitar Chords & Search Section -->
-    <section id="chords" class="container bg-light">
-        <h2>🎼 แจกคอร์ดกีตาร์ & เนื้อเพลงฮิต</h2>
-        <p class="section-subtitle">ห้องซ้อมชมรมเราคัดสรรคอร์ดเพลงแก้ง่ายๆ ไว้ฝึกซ้อมแจมกัน ลองค้นหาเพลงที่ชอบได้เลย!</p>
-        <div class="search-box">
-            <input type="text" id="chord-search" placeholder="พิมพ์ชื่อเพลง หรือชื่อศิลปิน..." onkeyup="searchChords()">
-        </div>
-        <div class="chord-list" id="chord-list">
-            <div class="chord-item">
-                <h3>ก้อนหินก้อนนั้น - Rose Sirintip</h3>
-                <p class="chords-preview"><strong>Key:</strong> C | <strong>Chords:</strong> C / G / Am / F</p>
-            </div>
-            <div class="chord-item">
-                <h3>หน้าสวยใจเสีย - Thai Song</h3>
-                <p class="chords-preview"><strong>Key:</strong> G | <strong>Chords:</strong> G / D / Em / C</p>
-            </div>
-            <div class="chord-item">
-                <h3>No Make Up - Zion.T</h3>
-                <p class="chords-preview"><strong>Key:</strong> A | <strong>Chords:</strong> Amaj7 / F#m7 / Bm7 / E7</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Gallery Section -->
-    <section id="gallery" class="container">
+    <section id="gallery" class="container bg-light">
         <h2>📸 บรรยากาศความสนุกในชมรม</h2>
         <div class="grid-3">
             <div class="card img-card">
@@ -112,7 +88,7 @@
     </section>
 
     <!-- Schedule Section -->
-    <section id="schedule" class="container bg-light">
+    <section id="schedule" class="container">
         <h2>📅 ตารางกิจกรรม & กิจกรรมซ้อม</h2>
         <table class="schedule-table">
             <thead>
@@ -143,23 +119,23 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="container">
+    <section id="faq" class="container bg-light">
         <h2>❓ คำถามที่พบบ่อยสำหรับเด็กใหม่</h2>
         <div class="faq-accordion">
             <div class="faq-item">
-                <button class="faq-question">เล่นเครื่องดนตรีไม่เป็นเลย สมัครได้ไหม?</button>
+                <button class="faq-question">เล่นเครื่องดนตรีไม่เป็นเลย สมัครได้ไหม? <span class="faq-icon">+</span></button>
                 <div class="faq-answer">
                     <p>สมัครได้แน่นอน 100%! ชมรมเรายินดีต้อนรับทุกคน มีรุ่นพี่จับมือสอนตั้งแต่จับคอร์ดวันแรกเลยครับ</p>
                 </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question">ไม่มีเครื่องดนตรีส่วนตัว มาเล่นได้ไหม?</button>
+                <button class="faq-question">ไม่มีเครื่องดนตรีส่วนตัว มาเล่นได้ไหม? <span class="faq-icon">+</span></button>
                 <div class="faq-answer">
                     <p>มาได้เลยครับ! ชมรมมีกลองชุด คีย์บอร์ด และมีกีตาร์กลางให้ยืมใช้ซ้อมในห้องชมรมได้ครับ</p>
                 </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question">ติดเรียน/ติดภารกิจ เข้าซ้อมไม่ครบทุกวันได้ไหม?</p>
+                <button class="faq-question">ติดเรียน/ติดภารกิจ เข้าซ้อมไม่ครบทุกวันได้ไหม? <span class="faq-icon">+</span></button>
                 <div class="faq-answer">
                     <p>ได้ครับ! ยืดหยุ่นตามเวลาว่างของสมาชิก จัดตารางซ้อมร่วมกับเพื่อนในวงได้เลย</p>
                 </div>
@@ -179,11 +155,11 @@
             <div class="form-group">
                 <label for="instrument">ตำแหน่ง/เครื่องดนตรีที่สนใจเล่น:</label>
                 <select id="instrument">
-                    <option value="กีตาร์">🎸 กีตาร์โปร่ง / กีตาร์ไฟฟ้า</option>
+                    <option value="กีตาร์โปร่ง / กีตาร์ไฟฟ้า">🎸 กีตาร์โปร่ง / กีตาร์ไฟฟ้า</option>
                     <option value="เบส">🎸 เบส</option>
-                    <option value="กลอง">🥁 กลองชุด / เครื่องเคาะ</option>
-                    <option value="ร้องนำ">🎤 ร้องนำ / ร้องประสาน</option>
-                    <option value="คีย์บอร์ด">🎹 คีย์บอร์ด / เปียโน</option>
+                    <option value="กลองชุด / เครื่องเคาะ">🥁 กลองชุด / เครื่องเคาะ</option>
+                    <option value="ร้องนำ / ร้องประสาน">🎤 ร้องนำ / ร้องประสาน</option>
+                    <option value="คีย์บอร์ด / เปียโน">🎹 คีย์บอร์ด / เปียโน</option>
                     <option value="ผู้สนใจทั่วไป">🎵 ยังเล่นไม่เป็น / อยากเรียนรู้เพิ่มเติม</option>
                 </select>
             </div>
@@ -194,6 +170,16 @@
             <button type="submit" class="btn btn-primary btn-block">ยื่นใบสมัครทันที</button>
         </form>
     </section>
+
+    <!-- Custom Success Modal Popup -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">🎉</div>
+            <h3 id="modalTitle">ยื่นใบสมัครเรียบร้อยแล้ว!</h3>
+            <p id="modalMessage">ขอบคุณที่สนใจเข้าชมรม AURA-Sound หวังว่าจะได้มาร่วมงานและสร้างเสียงเพลงไปด้วยกันนะครับ!</p>
+            <button class="btn btn-primary modal-close-btn" onclick="closeModal()">ตกลง</button>
+        </div>
+    </div>
 
     <button id="scrollTopBtn" title="Back to top">⬆️</button>
 
