@@ -3,61 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AURA-Sound | ชมรมดนตรี</title>
+    <title>AURA-Sound | ชมรมดนตรี - มาร่วมสร้างเสียงเพลงด้วยกัน!</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header Navigation -->
+    <!-- Navigation -->
     <header>
         <div class="logo">🎵 AURA-SOUND</div>
         <nav>
-            <a href="#about">เกี่ยวกับชมรม</a>
-            <a href="#gallery">ภาพกิจกรรม</a>
+            <a href="#why-us">ทำไมต้องมาอยู่กับเรา</a>
+            <a href="#chords">แจกคอร์ดเพลง</a>
+            <a href="#gallery">บรรยากาศชมรม</a>
             <a href="#schedule">ตารางซ้อม</a>
-            <a href="#join">สมัครสมาชิก</a>
+            <a href="#faq">FAQ</a>
+            <a href="#join" class="btn-nav">🔥 สมัครเข้าชมรม</a>
             <button id="theme-toggle" class="btn-theme">🌙/☀️ Mode</button>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>ปลดปล่อยเสียงเพลงในตัวคุณที่ <span>AURA-Sound</span></h1>
-        <p>พื้นที่สำหรับคนรักดนตรี มาร่วมสร้างเสียงเพลง มิตรภาพ และเวทีแสดงผลงานไปด้วยกัน</p>
-        <a href="#join" class="btn">เข้าร่วมชมรมกับเรา</a>
+        <div class="hero-content">
+            <span class="badge">🎸 เปิดรับสมัครสมาชิกใหม่แล้ววันนี้!</span>
+            <h1>ปลดปล่อยความสนุก แล้วมาปล่อยของที่ <span>AURA-Sound</span></h1>
+            <p>ไม่ว่าจะเล่นเก่งแล้ว หรือเพิ่งเริ่มจับดนตรีครั้งแรก ที่นี่มีพื้นที่ให้คุณได้ลอง ได้เล่น และขึ้นเวทีจริงเสมอ!</p>
+            
+            <div class="countdown-box">
+                <h3>⏳ นับถอยหลังวันรวมวงซ้อมใหญ่ประจำสัปดาห์</h3>
+                <div id="timer">3 วัน 04 ชั่วโมง 20 นาที</div>
+            </div>
+
+            <div class="hero-btns">
+                <a href="#join" class="btn btn-primary">สมัครเข้าชมรมทันที (ฟรี)</a>
+                <a href="#why-us" class="btn btn-secondary">ดูว่าเรามีอะไรบ้าง</a>
+            </div>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="container">
-        <h2>เกี่ยวกับชมรม AURA-Sound</h2>
-        <p class="about-text">
-            ชมรมดนตรี AURA-Sound เป็นศูนย์รวมของนักเรียน/นักศึกษาที่มีความเชี่ยวชาญและหลงใหลในเสียงเพลง ไม่ว่าจะเป็นการเล่นเครื่องดนตรีสากล การร้องเพลง หรือการแต่งเพลง
-        </p>
+    <!-- Why Join Us Section -->
+    <section id="why-us" class="container">
+        <h2>✨ 4 เหตุผลที่คุณไม่ควรพลาดชมรม AURA-Sound</h2>
+        <div class="grid-4">
+            <div class="card feature-card">
+                <div class="icon">🎧</div>
+                <h3>ห้องซ้อมและอุปกรณ์ฟรี</h3>
+                <p>มีห้องซ้อมติดแอร์ กลองชุด ตู้แอมป์ และเครื่องเสียงครบครัน ให้สมาชิกเข้ามาซ้อมได้ฟรีทุกวัน</p>
+            </div>
+            <div class="card feature-card">
+                <div class="icon">🤝</div>
+                <h3>หาเพื่อนร่วมวงง่ายๆ</h3>
+                <p>อยากจัดวงเล่นเพลงแนวไหน แค่มาเปิดหมวกแจมกันในชมรม ได้เพื่อนใหม่สไตล์เดียวกันแน่นอน</p>
+            </div>
+            <div class="card feature-card">
+                <div class="icon">🎤</div>
+                <h3>เวทีแสดงผลงานจริง</h3>
+                <p>มีงานคอนเสิร์ตชมรม กิจกรรมดนตรีสดโฟล์คซอง และโอกาสขึ้นเล่นงานโรงเรียน/มหาวิทยาลัยตลอดปี</p>
+            </div>
+            <div class="card feature-card">
+                <div class="icon">🎸</div>
+                <h3>สอนฟรีจากรุ่นพี่</h3>
+                <p>เล่นไม่เป็นเลย? ไม่ต้องกังวล! มีพี่ๆ ใจดีคอยสอนพื้นฐานกีตาร์ เบส กลอง และร้องเพลงให้แบบเป็นกันเอง</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guitar Chords & Search Section -->
+    <section id="chords" class="container bg-light">
+        <h2>🎼 แจกคอร์ดกีตาร์ & เนื้อเพลงฮิต</h2>
+        <p class="section-subtitle">ห้องซ้อมชมรมเราคัดสรรคอร์ดเพลงแก้ง่ายๆ ไว้ฝึกซ้อมแจมกัน ลองค้นหาเพลงที่ชอบได้เลย!</p>
+        <div class="search-box">
+            <input type="text" id="chord-search" placeholder="พิมพ์ชื่อเพลง หรือชื่อศิลปิน..." onkeyup="searchChords()">
+        </div>
+        <div class="chord-list" id="chord-list">
+            <div class="chord-item">
+                <h3>ก้อนหินก้อนนั้น - Rose Sirintip</h3>
+                <p class="chords-preview"><strong>Key:</strong> C | <strong>Chords:</strong> C / G / Am / F</p>
+            </div>
+            <div class="chord-item">
+                <h3>หน้าสวยใจเสีย - Thai Song</h3>
+                <p class="chords-preview"><strong>Key:</strong> G | <strong>Chords:</strong> G / D / Em / C</p>
+            </div>
+            <div class="chord-item">
+                <h3>No Make Up - Zion.T</h3>
+                <p class="chords-preview"><strong>Key:</strong> A | <strong>Chords:</strong> Amaj7 / F#m7 / Bm7 / E7</p>
+            </div>
+        </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="container bg-light">
-        <h2>📸 บรรยากาศการซ้อมและกิจกรรม</h2>
+    <section id="gallery" class="container">
+        <h2>📸 บรรยากาศความสนุกในชมรม</h2>
         <div class="grid-3">
             <div class="card img-card">
                 <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="Live Concert">
-                <h3>แสดงดนตรีสด</h3>
+                <h3>เวทีคอนเสิร์ตใหญ่ประจำปี</h3>
             </div>
             <div class="card img-card">
                 <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80" alt="Jam Session">
-                <h3>การซ้อมรวมวง</h3>
+                <h3>Jam Session สบายๆ หลังเลิกเรียน</h3>
             </div>
             <div class="card img-card">
                 <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=600&q=80" alt="Recording">
-                <h3>บันทึกเสียงห้องซ้อม</h3>
+                <h3>ห้องซ้อมและสตูดิโอบันทึกเสียง</h3>
             </div>
         </div>
     </section>
 
     <!-- Schedule Section -->
-    <section id="schedule" class="container">
-        <h2>📅 ตารางการซ้อมประจำสัปดาห์</h2>
+    <section id="schedule" class="container bg-light">
+        <h2>📅 ตารางกิจกรรม & กิจกรรมซ้อม</h2>
         <table class="schedule-table">
             <thead>
                 <tr>
@@ -70,51 +126,79 @@
                 <tr>
                     <td>จันทร์ - พุธ</td>
                     <td>16:30 - 18:30 น.</td>
-                    <td>ซ้อมแยกตามตำแหน่ง (กีตาร์ / ร้อง / กลอง)</td>
+                    <td>ซ้อมแยกตามตำแหน่ง (กีตาร์ / ร้อง / กลอง) + พี่สอนน้อง</td>
                 </tr>
                 <tr>
                     <td>พฤหัสบดี</td>
                     <td>16:30 - 19:00 น.</td>
-                    <td>รวมวงซ้อมใหญ่ (Full Band Rehearsal)</td>
+                    <td>รวมวงซ้อมใหญ่เตรียมเปิดหมวกและคอนเสิร์ต</td>
                 </tr>
                 <tr>
                     <td>ศุกร์</td>
                     <td>15:30 - 18:00 น.</td>
-                    <td>กิจกรรม Jam Session & แสดงดนตรีสดหน้าชมรม</td>
+                    <td>กิจกรรม Jam Session ดนตรีสดหน้าห้องชมรม</td>
                 </tr>
             </tbody>
         </table>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="container">
+        <h2>❓ คำถามที่พบบ่อยสำหรับเด็กใหม่</h2>
+        <div class="faq-accordion">
+            <div class="faq-item">
+                <button class="faq-question">เล่นเครื่องดนตรีไม่เป็นเลย สมัครได้ไหม?</button>
+                <div class="faq-answer">
+                    <p>สมัครได้แน่นอน 100%! ชมรมเรายินดีต้อนรับทุกคน มีรุ่นพี่จับมือสอนตั้งแต่จับคอร์ดวันแรกเลยครับ</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">ไม่มีเครื่องดนตรีส่วนตัว มาเล่นได้ไหม?</button>
+                <div class="faq-answer">
+                    <p>มาได้เลยครับ! ชมรมมีกลองชุด คีย์บอร์ด และมีกีตาร์กลางให้ยืมใช้ซ้อมในห้องชมรมได้ครับ</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">ติดเรียน/ติดภารกิจ เข้าซ้อมไม่ครบทุกวันได้ไหม?</p>
+                <div class="faq-answer">
+                    <p>ได้ครับ! ยืดหยุ่นตามเวลาว่างของสมาชิก จัดตารางซ้อมร่วมกับเพื่อนในวงได้เลย</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Join Us Form -->
-    <section id="join" class="container bg-light">
-        <h2>✍️ สมัครเข้าชมรม AURA-Sound</h2>
+    <section id="join" class="container bg-highlight">
+        <h2>🔥 มาร่วมเป็นส่วนหนึ่งของ AURA-Sound</h2>
+        <p class="section-subtitle">กรอกข้อมูลสั้นๆ ด้านล่าง แล้วเตรียมมาสนุกด้วยกันที่ห้องซ้อมได้เลย!</p>
         <form class="join-form" id="reg-form">
             <div class="form-group">
-                <label for="name">ชื่อ - นามสกุล:</label>
-                <input type="text" id="name" placeholder="กรอกชื่อ-นามสกุล" required>
+                <label for="name">ชื่อ - นามสกุล (ชื่อเล่น):</label>
+                <input type="text" id="name" placeholder="เช่น นายสมชาย ใจดี (ชาย)" required>
             </div>
             <div class="form-group">
-                <label for="instrument">เครื่องดนตรี / ตำแหน่งที่สนใจ:</label>
+                <label for="instrument">ตำแหน่ง/เครื่องดนตรีที่สนใจเล่น:</label>
                 <select id="instrument">
-                    <option value="กีตาร์">กีตาร์โปร่ง / กีตาร์ไฟฟ้า</option>
-                    <option value="เบส">เบส</option>
-                    <option value="กลอง">กลองชุด</option>
-                    <option value="ร้องนำ">ร้องนำ / ร้องประสาน</option>
-                    <option value="คีย์บอร์ด">คีย์บอร์ด / เปียโน</option>
+                    <option value="กีตาร์">🎸 กีตาร์โปร่ง / กีตาร์ไฟฟ้า</option>
+                    <option value="เบส">🎸 เบส</option>
+                    <option value="กลอง">🥁 กลองชุด / เครื่องเคาะ</option>
+                    <option value="ร้องนำ">🎤 ร้องนำ / ร้องประสาน</option>
+                    <option value="คีย์บอร์ด">🎹 คีย์บอร์ด / เปียโน</option>
+                    <option value="ผู้สนใจทั่วไป">🎵 ยังเล่นไม่เป็น / อยากเรียนรู้เพิ่มเติม</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="contact">เบอร์โทรศัพท์ / Line ID:</label>
-                <input type="text" id="contact" placeholder="สำหรับติดต่อกลับ" required>
+                <label for="contact">เบอร์โทรศัพท์ / Line ID / Facebook:</label>
+                <input type="text" id="contact" placeholder="สำหรับดึงเข้ากลุ่มไลน์ชมรม" required>
             </div>
-            <button type="submit" class="btn">ยื่นใบสมัคร</button>
+            <button type="submit" class="btn btn-primary btn-block">ยื่นใบสมัครทันที</button>
         </form>
     </section>
 
-    <!-- Footer -->
+    <button id="scrollTopBtn" title="Back to top">⬆️</button>
+
     <footer>
-        <p>© 2026 AURA-Sound Music Club. All Rights Reserved.</p>
+        <p>© 2026 AURA-Sound Music Club. All Rights Reserved. มาร่วมสร้างเสียงเพลงไปด้วยกัน!</p>
     </footer>
 
     <script src="script.js"></script>
